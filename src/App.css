@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 1em;
+  height: 100%;
+}
+#app, #root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* input area */
+.ant-input {
+  font-size: 20px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* main boxes  */
+.box {
+  margin-top: 2%;
+  height: 42% !important;
+}
+/* main lists  */
+.list {
+  height: 100%;
+  overflow-y: scroll !important;
+  margin-bottom: 10px;
+}
+/* todo list */
+.todoList {
+  display: block;
+  margin-bottom: 5px;
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* done list */
+#doneTitle {
+  margin-top: 12%;
+}
+
+.doneList span{
+  color: grey !important;
+}
+
+#delBtn {
+  background-color: #FF4D4F;
   color: white;
+  width: 18%;
+  border-radius: 10%;
+  position: relative;
+  top: -8%;
+  border: 1px;
 }
 
-.App-link {
-  color: #61dafb;
+/* change designs of checkbox */
+.ant-checkbox-wrapper {
+  width: 81% !important;
+  font-size: 24px !important;
+  align-items: center !important;
+  height: 100%;
+  line-height: 100%;
+}
+.ant-checkbox {
+  top: 0 !important;
+}
+.ant-checkbox+span {
+  padding-left: 10px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.block{
+  margin: 3% 0 !important;
+  display: block !important;
+  width: 100%;
+  height: 10%;
+  background-color: #D1EDF5;
+  position: relative;
+}
+
+.none{
+  display: none !important;
 }
